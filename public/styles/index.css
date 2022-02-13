@@ -12,10 +12,6 @@ ul.navbar-nav{
    align-items: end;
 }
 
-button.navbar-toggler {
-
-}
-
 .header {
     height: 80vh;
     background-image: linear-gradient(rgba(255, 255, 255, .2), rgba(255, 255, 255, .2)),
