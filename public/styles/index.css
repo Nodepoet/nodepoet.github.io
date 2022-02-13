@@ -1,8 +1,26 @@
-body{
-    background-color: rgb(159, 212, 212);
-    
-}
 
 #card {
     padding: 0px;
+}
+
+.navbar>.container-fluid {
+    justify-content: right;
+}
+
+
+ul.navbar-nav{
+   align-items: end;
+}
+
+button.navbar-toggler {
+
+}
+
+.header {
+    height: 80vh;
+    background-image: linear-gradient(rgba(255, 255, 255, .2), rgba(255, 255, 255, .2)),
+    url("https://res.cloudinary.com/dqqxdpug2/image/upload/v1644726393/default/bg_xzhehh.jpg");
+    background-size: cover;
+    background-position: top;
+    position: relative
 }
