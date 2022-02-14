@@ -2,20 +2,24 @@
 #card {
     padding: 0px;
 }
-/* 
-.navbar>.container-fluid {
-    justify-content: end;
-
-} */
 
 
 .navbar-toggler{
     background-color: rgba(255, 255, 255, 0.7);
 }
 
+.projects{
+    background-color: transparent;
+}
 
 ul.navbar-nav{
    align-items: flex-end;
+}
+
+#link{
+color: black;   
+font-weight: 500;
+text-shadow: 1px 1px 3px rgba(255, 255, 255, 1);
 }
 
 #nav.navbar {
@@ -25,8 +29,76 @@ ul.navbar-nav{
 .header {
     height: 80vh;
     background-image: linear-gradient(rgba(255, 255, 255, .2), rgba(255, 255, 255, .2)),
-    url("https://res.cloudinary.com/dqqxdpug2/image/upload/v1644726393/default/bg_xzhehh.jpg");
-    background-size: cover;
+    url("https://res.cloudinary.com/dqqxdpug2/image/upload/v1644791927/default/header_lx5opb.jpg");
+    background-size: 100% 100%;
     background-position: top;
     position: relative
+}
+
+header{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-weight: 500;
+text-shadow: 1px 1px 3px rgba(255, 255, 255, 1);
+}
+
+.intro{
+    align-items: center;
+}
+
+.contact{
+    background-color: rgba(223,234,238,.7);
+    background-position: bottom;
+    position: relative;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+#cardImage{
+    padding: 0px;
+    background-image: linear-gradient(rgba(255, 255, 255, .2), rgba(255, 255, 255, .2)),
+    url("https://res.cloudinary.com/dqqxdpug2/image/upload/v1644726393/default/bg_xzhehh.jpg");
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+}
+
+.footer{
+    height: 20vh;
+    background-color: rgb(37, 37, 37);
+    background-position: bottom;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.footLinks{
+    display: inline;
+}
+
+.list {
+    padding: 0px 12px;
+}
+
+li > a > img {
+    height: 40px;
+    width: 40px;
+    padding: 3px;
+}
+
+.footText{
+ color: rgba(250, 235, 215, 0.5);
+ padding-bottom: 0px;
+}
+
+.closing{
+    align-items: center;
+    justify-content: center;
 }
