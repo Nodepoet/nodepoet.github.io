@@ -55,39 +55,45 @@
 .emblem{
     height: 60px;
     width: 60px;
+    margin-top: .8em;
+    margin-left: -.5em;
+    margin-bottom: -18px;
 }
-
-.emblemPosition {
-    justify-content: flex-start;
-    align-items: flex-start;
-}
-
 
 .vert{
-width: 50px;
+width: auto;
 padding-right: 0px;
 align-items: flex-start;
 display: inline;
 }
 
+.faceCol {
+    padding: 0px;
+    margin-left: -4em;
+}
+
 .verticalText{
-    width: 1px;
-    word-wrap: break-word;
-    white-space: pre-wrap;
-    padding-left: 25px;
+    -webkit-writing-mode: vertical-rl;
+    -webkit-text-orientation: upright;
+    writing-mode: vertical-rl;
+    text-orientation: upright;
     color: #454545;
     margin-top: -15px;
     text-shadow: 1px 1px 3px rgba(255, 255, 255, 1);
 }
 
 .horizontal{
-    display: inline;
+    text-align: start;
+    margin-left: 45px;
+    margin-top: .45em;
     text-shadow: 1px 1px 3px rgba(255, 255, 255, 1);
 }
 
 .face{
-    height: 17rem;
-    width: 17rem;
+    width: 70vw;
+    height: auto;
+    max-height: 400px;
+    max-width: 400px;
     margin-top: 10px;
     margin-bottom: 20px;
 }
