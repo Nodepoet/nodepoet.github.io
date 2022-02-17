@@ -8,6 +8,8 @@
   <title>Vincent McIntosh</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+  crossorigin="anonymous"></script>
   <link rel="stylesheet" href="./public/styles/index.css">
   <link rel="stylesheet" href="./public/styles/animate.css">
 </head>
@@ -16,27 +18,33 @@
   <nav class="navbar fixed-top navbar-light" id="nav" aria-label="navbar">
     <div class="container-fluid">
       <a class="navbar-brand" href="#"></a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navBar"
+      <button class="navbar-toggler" id="toggle" type="button" data-bs-toggle="collapse" data-bs-target="#navBar"
         aria-controls="navBar" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navBar">
-        <ul class="navbar-nav ms-auto">
+        <ul class="navbar-nav text-center">
           <li class="nav-item">
-            <a class="nav-link active" id="link" aria-current="page" href="#">Home</a>
+            <a class="nav-link active" id="link" aria-current="page" href="#about">About Me</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link active" id="link" aria-current="page" href="#">Link</a>
+            <a class="nav-link active" id="link" aria-current="page" href="#services">Services</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link active" id="link" aria-current="page" href="#">Show</a>
+            <a class="nav-link active" id="link" aria-current="page" href="#projects">Projects</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" id="link" aria-current="page" href="#testomonials">Testomonials</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" id="link" aria-current="page" href="#contact">Contact</a>
           </li>
         </ul>
       </div>
     </div>
   </nav>
 
-  <header class="mb-2">
+  <header id="head" class="mb-2">
     <div class="pt-1 ps-1">
       <img class="emblem footLinks" src="./public/styles/emblemwork.PNG" alt="">
       <h1 class="horizontal">i n c e n t</h1>
@@ -45,7 +53,7 @@
         <div class="ps-1 vert">
           <h1 class="verticalText text-center">c I n t o s h</h1>
         </div>
-        <div class="col text-center easy">
+        <div class="col text-center">
           <img class="face animate__animated animate__bounceInDown" src="./public/styles/face.PNG" alt="">
           <h4 class="animate__animated animate__bounceInDown">Full-Stack Developer looking for cash</h4>
         </div>
@@ -53,7 +61,35 @@
     </div>
   </header>
 
-  <section class="projects mb-5 pb-3 pt-3">
+  <section id="about">
+    <h1 id="test" class="text-center mt-5 mb-3">About Me</h1>
+    <div>
+    <p id="next" class="about">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Atque laudantium esse nostrum similique nisi eveniet non, totam distinctio quia debitis repudiandae assumenda, commodi minus fuga delectus sed accusamus voluptate? Dolorum.
+    Dolores, recusandae? Corrupti, rem iste exercitationem, assumenda dolores dolore nobis voluptatum nihil eaque tempore labore veritatis excepturi alias necessitatibus, odio suscipit rerum maxime eligendi soluta architecto laborum non voluptas. Aliquid!
+    Atque amet delectus voluptate consequuntur sapiente cupiditate distinctio molestias ipsam saepe repudiandae? Aliquam, iste, nesciunt vero dolorum vitae reprehenderit voluptas debitis earum hic itaque voluptates ea minus at, id ratione!
+    Sint iure possimus minima ullam neque, placeat corrupti quod dolorem rerum necessitatibus eaque? Dolore excepturi quo libero laboriosam voluptas cumque asperiores quis facilis, ea voluptatibus maiores, laudantium, ut cum illo!
+    Error, accusantium molestiae. Praesentium iure non, reiciendis accusantium laborum placeat facilis voluptates animi delectus totam aspernatur similique corrupti temporibus provident et ratione illum esse numquam minima eos laboriosam sed? Dolorum.
+    Quo voluptas quia quae non quis error impedit, corrupti architecto assumenda id illum cumque. Enim iste facere voluptates ex et, omnis id dolorum explicabo quidem repudiandae incidunt totam placeat culpa.
+    Error consequuntur magni eligendi ratione reprehenderit laudantium consequatur fugit dignissimos tempora minima eum magnam. Mollitia aliquam suscipit totam?
+    Aliquam sint nobis, em nemo earum a accusantium culpa odit quia ducimus fuga error tempora? Sed, natus. Perferendis dolorem quibusdam asperiores?</p>
+</div>
+  </section>
+
+  <section id="services">
+<h1 class="text-center mt-5 mb-3">Services</h1>
+<div>
+  <p class="about">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Atque laudantium esse nostrum similique nisi eveniet non, totam distinctio quia debitis repudiandae assumenda, commodi minus fuga delectus sed accusamus voluptate? Dolorum.
+  Dolores, recusandae? Corrupti, rem iste exercitationem, assumenda dolores dolore nobis voluptatum nihil eaque tempore labore veritatis excepturi alias necessitatibus, odio suscipit rerum maxime eligendi soluta architecto laborum non voluptas. Aliquid!
+  Atque amet delectus voluptate consequuntur sapiente cupiditate distinctio molestias ipsam saepe repudiandae? Aliquam, iste, nesciunt vero dolorum vitae reprehenderit voluptas debitis earum hic itaque voluptates ea minus at, id ratione!
+  Sint iure possimus minima ullam neque, placeat corrupti quod dolorem rerum necessitatibus eaque? Dolore excepturi quo libero laboriosam voluptas cumque asperiores quis facilis, ea voluptatibus maiores, laudantium, ut cum illo!
+  Error, accusantium molestiae. Praesentium iure non, reiciendis accusantium laborum placeat facilis voluptates animi delectus totam aspernatur similique corrupti temporibus provident et ratione illum esse numquam minima eos laboriosam sed? Dolorum.
+  Quo voluptas quia quae non quis error impedit, corrupti architecto assumenda id illum cumque. Enim iste facere voluptates ex et, omnis id dolorum explicabo quidem repudiandae incidunt totam placeat culpa.
+  </p>
+</div>
+  </section>
+
+  <section id="projects" class="projects mb-5 pb-3 pt-3">
+    <h1 class="text-center">Projects</h1>
     <div class="container mt-5">
       <div class="row justify-content-center">
         <div id="card" class="col-xs-12 col-lg-4 mb-3 d-flex text-center justify-content-center">
@@ -128,7 +164,7 @@
                 <div class="card-body">
                   <h4 class="card-title">Serving U</h4>
                   <p class="card-text">Full Stack CRUD Application</p>
-                  <a href="https://the-scoop-review.herokuapp.com" class="btn btn-primary">Check it
+                  <a href="http://servingu.agency" class="btn btn-primary">Check it
                     out!</a>
                   <div class="row info">
                     <div class="col info">
@@ -156,7 +192,21 @@
     </div>
   </section>
 
-  <section class="contact align-items-center mt-3">
+  <section id="testomonials">
+    <h1 class="text-center mt-5 mb-3">Testomonials</h1>
+    <div>
+    <p class="about">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Atque laudantium esse nostrum similique nisi eveniet non, totam distinctio quia debitis repudiandae assumenda, commodi minus fuga delectus sed accusamus voluptate? Dolorum.
+    Dolores, recusandae? Corrupti, rem iste exercitationem, assumenda dolores dolore nobis voluptatum nihil eaque tempore labore veritatis excepturi alias necessitatibus, odio suscipit rerum maxime eligendi soluta architecto laborum non voluptas. Aliquid!
+    Atque amet delectus voluptate consequuntur sapiente cupiditate distinctio molestias ipsam saepe repudiandae? Aliquam, iste, nesciunt vero dolorum vitae reprehenderit voluptas debitis earum hic itaque voluptates ea minus at, id ratione!
+    Sint iure possimus minima ullam neque, placeat corrupti quod dolorem rerum necessitatibus eaque? Dolore excepturi quo libero laboriosam voluptas cumque asperiores quis facilis, ea voluptatibus maiores, laudantium, ut cum illo!
+    Error, accusantium molestiae. Praesentium iure non, reiciendis accusantium laborum placeat facilis voluptates animi delectus totam aspernatur similique corrupti temporibus provident et ratione illum esse numquam minima eos laboriosam sed? Dolorum.
+    Quo voluptas quia quae non quis error impedit, corrupti architecto assumenda id illum cumque. Enim iste facere voluptates ex et, omnis id dolorum explicabo quidem repudiandae incidunt totam placeat culpa.
+    Error consequuntur magni eligendi ratione reprehenderit laudantium consequatur fugit dignissimos tempora minima eum magnam. Mollitia aliquam suscipit totam?
+    Aliquam sint nobis, em nemo earum a accusantium culpa odit quia ducimus fuga error tempora? Sed, natus. Perferendis dolorem quibusdam asperiores?</p>
+</div>
+  </section>
+
+  <section id="contact" class="contact align-items-center mt-3">
     <div class="container d-flex justify-content-center align-items-center mt-5 mb-5">
       <div class="row flex-fill justify-content-center">
         <div class="col-xs-8 col-lg-10">
@@ -212,7 +262,7 @@
         </div>
 
         <div class="d-flex col-xs-12 col-sm-6 text-center closing">
-          <p class="footText">&copy; Vincent McIntosh - 2019</p>
+          <p class="footText">&copy; Vincent McIntosh - 2021</p>
         </div>
       </div>
     </div>

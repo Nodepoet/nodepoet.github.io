@@ -18,6 +18,7 @@
         })
 })();
 
+
 function flip(event){
 	var element = event.currentTarget;
 	if (element.className === "flipper") {
@@ -29,3 +30,9 @@ function flip(event){
     }
   }
 };
+
+$('.navbar-nav>li>a').on('click', function(){
+  $('.navbar-collapse').collapse('hide');
+});
+
+document.documentElement.style.setProperty('--animate-duration', '1.5s');
