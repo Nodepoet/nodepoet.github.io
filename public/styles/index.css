@@ -55,8 +55,8 @@
 .emblem{
     height: 60px;
     width: 60px;
-    margin-top: .8em;
-    margin-left: -.5em;
+    margin-top: 25px;
+    margin-left: -15px;
     margin-bottom: -18px;
 }
 
@@ -69,7 +69,7 @@ display: inline;
 
 .faceCol {
     padding: 0px;
-    margin-left: -4em;
+    margin-left: -60px;
 }
 
 .verticalText{
@@ -77,15 +77,15 @@ display: inline;
     -webkit-text-orientation: upright;
     writing-mode: vertical-rl;
     text-orientation: upright;
-    color: #454545;
+    color: #8d7300;
     margin-top: -15px;
-    text-shadow: 1px 1px 3px rgba(255, 255, 255, 1);
+    text-shadow: 1px 1px 3px rgb(255, 255, 255);
 }
 
 .horizontal{
     text-align: start;
-    margin-left: 45px;
-    margin-top: .45em;
+    margin-left: 42px;
+    margin-top: 12px;
     text-shadow: 1px 1px 3px rgba(255, 255, 255, 1);
 }
 
