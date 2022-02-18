@@ -55,10 +55,6 @@ body{
     }
 }
 
-.containTop{
-
-}
-
 .contain{
     width: 100%;
     height: auto;
@@ -77,12 +73,12 @@ body{
 }
 
 .logo{
-    width:100px;
+    width: 100px;
     margin-top: 15px;
 }
 
 .lastName{
-    color: #8d7300;
+    color: #075dc0;
     text-shadow: 1px 1px 3px rgb(255, 255, 255);
     font-size: 37px;
     display: block;
