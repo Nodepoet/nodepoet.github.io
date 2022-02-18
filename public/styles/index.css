@@ -55,53 +55,61 @@ body{
     }
 }
 
+.containTop{
 
-.emblem{
-    height: 60px;
-    width: 60px;
-    margin-top: 25px;
-    margin-left: -15px;
-    margin-bottom: -18px;
 }
 
-.vert{
-width: auto;
-padding-right: 0px;
-align-items: flex-start;
-display: inline;
+.contain{
+    width: 100%;
+    height: auto;
+    display: flex;
+}
+
+.home{
+    display: inline;
+    padding-right: 0px;
+}
+
+.emblem{
+    height: 100px;
+    width: 100px;
+    display:inline;
+}
+
+.logo{
+    width:100px;
+    margin-top: 15px;
+}
+
+.lastName{
+    color: #8d7300;
+    text-shadow: 1px 1px 3px rgb(255, 255, 255);
+    font-size: 37px;
+    display: block;
+    margin-top: 0px;
+}
+
+.firstName{
+    text-shadow: 1px 1px 3px rgba(255, 255, 255, 1);
+    margin-bottom: 0px;
+    margin-top: 11px;
+    font-size: 37px;
+    display: inline-block;
 }
 
 .faceCol {
-    padding: 0px;
-    margin-left: -60px;
-}
-
-.verticalText{
-    -webkit-writing-mode: vertical-rl;
-    -webkit-text-orientation: upright;
-    writing-mode: vertical-rl;
-    text-orientation: upright;
-    color: #8d7300;
-    margin-top: -15px;
-    text-shadow: 1px 1px 3px rgb(255, 255, 255);
-}
-
-.horizontal{
-    text-align: start;
-    margin-left: 42px;
-    margin-top: 12px;
-    text-shadow: 1px 1px 3px rgba(255, 255, 255, 1);
+    padding-left: 30px;
+    padding-top: 15px;
+    
 }
 
 .face{
     width: 70vw;
     height: auto;
-    max-height: 400px;
-    max-width: 400px;
-    margin-top: 10px;
+    max-height: 350px;
+    max-width: 350px;
     margin-bottom: 20px;
 }
-
 
 .about{
     padding: 1rem;
@@ -141,14 +149,6 @@ margin-bottom: 5px;
     background-color: transparent;
 }
 
-.header {
-    height: 80%;
-    display: flex;
-    width: 100%;
-    font-weight: 500;
-    text-shadow: 1px 1px 3px rgba(255, 255, 255, 1);
-}
-
 header{
    height: 40rem;
     background-image: linear-gradient(rgba(255, 255, 255, .2), rgba(255, 255, 255, .2)),
@@ -157,15 +157,6 @@ header{
     background-position: top;
     position: relative;
     width: 100%;
-}
-
-.topCont{
-    justify-content: flex-start;
-}
-
-
-.intro{
-    align-items: center;
 }
 
 #card {
