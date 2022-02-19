@@ -2,10 +2,15 @@ body{
     -webkit-text-size-adjust: none;
 }
 
+body > .btn:hover {
+    box-shadow: 0px 0px 20px 1px #000;
+  }
+
 .navbar .navbar-toggler{
     z-index:1000;
     background-color: rgba(255, 255, 255, 0.7);
 }
+
 @media (max-width: 3000px){
     .navbar .navbar-collapse{
         background:rgba(0,0,0,.95);
@@ -53,6 +58,42 @@ body{
     .navbar-nav {
         margin-left: initial !important;
     }
+}
+
+.info{
+    margin: 0px;
+    margin-left: 3px;
+    padding: 0px;
+    display: inline;
+    align-items: center;
+    text-align: start;
+}
+
+#nav.navbar {
+    background-color: transparent;
+}
+
+.infoBtn{ 
+    display: inline;
+    padding: .3em;
+}
+
+#link{
+color: rgb(255, 255, 255);  
+font-size: 2rem; 
+font-weight: 500;
+text-shadow: .5px .5px 1px rgb(255, 198, 42, .8);
+margin-bottom: 5px;
+}
+
+header{
+   height: 40rem;
+    background-image: linear-gradient(rgba(255, 255, 255, .2), rgba(255, 255, 255, .2)),
+    url("https://res.cloudinary.com/dqqxdpug2/image/upload/v1644791927/default/header_lx5opb.jpg");
+    background-size: 100% 100%;
+    background-position: top;
+    position: relative;
+    width: 100%;
 }
 
 .contain{
@@ -109,109 +150,13 @@ body{
 
 .about{
     padding: 1rem;
+    margin-bottom: 0px;
 }
 
 .projects{
     background-color: transparent;
     height: auto;
     position: relative;
-}
-
-
-.info{
-    margin: 0px;
-    margin-left: 3px;
-    padding: 0px;
-    display: inline;
-    align-items: center;
-    text-align: start;
-}
-
-.infoBtn{ 
-    display: inline;
-    padding: .3em;
-}
-
-
-#link{
-color: rgb(255, 255, 255);  
-font-size: 2rem; 
-font-weight: 500;
-text-shadow: .5px .5px 1px rgb(255, 198, 42, .8);
-margin-bottom: 5px;
-}
-
-#nav.navbar {
-    background-color: transparent;
-}
-
-header{
-   height: 40rem;
-    background-image: linear-gradient(rgba(255, 255, 255, .2), rgba(255, 255, 255, .2)),
-    url("https://res.cloudinary.com/dqqxdpug2/image/upload/v1644791927/default/header_lx5opb.jpg");
-    background-size: 100% 100%;
-    background-position: top;
-    position: relative;
-    width: 100%;
-}
-
-#card {
-    padding: 0px;
-}
-
-
-#cardImage{
-    padding: 0px;
-    background-image: linear-gradient(rgba(255, 255, 255, .2), rgba(255, 255, 255, .2)),
-    url("https://res.cloudinary.com/dqqxdpug2/image/upload/v1644726393/default/bg_xzhehh.jpg");
-    background-size: cover;
-    display: flex;
-    flex-direction: column;
-}
-
-.contact{
-    background-color: rgba(223,234,238,.7);
-    background-position: bottom;
-    position: relative;
-    height: auto;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-
-}
-.footer{
-    height: 20vh;
-    background-color: rgb(37, 37, 37);
-    background-position: bottom;
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-
-.footLinks{
-    display: inline;
-}
-
-.list {
-    padding: 0px 12px;
-}
-
-li > a > img {
-    height: 40px;
-    width: 40px;
-    padding: 3px;
-}
-
-.footText{
- color: rgba(250, 235, 215, 0.5);
- padding-bottom: 0px;
-}
-
-.closing{
-    align-items: center;
-    justify-content: center;
 }
 
 .card {
@@ -260,9 +205,152 @@ li > a > img {
     box-shadow: 0px 0px 20px 1px #000;
   }
 
-body > .btn:hover {
-    box-shadow: 0px 0px 20px 1px #000;
+#card {
+    padding: 0px;
+}
+
+#cardImage{
+    padding: 0px;
+    background-image: linear-gradient(rgba(255, 255, 255, .2), rgba(255, 255, 255, .2)),
+    url("https://res.cloudinary.com/dqqxdpug2/image/upload/v1644726393/default/bg_xzhehh.jpg");
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+}
+
+.services {
+     height: auto;
+     position: relative;
+     width: 100%;
+     background-image: linear-gradient(rgba(255, 255, 255, .85), rgba(255, 255, 255, .5)),
+     url("https://res.cloudinary.com/dqqxdpug2/image/upload/v1644791927/default/header_lx5opb.jpg");
+     background-size: 100% 100%;
+     margin-top: 3px;
+}
+.service-title {
+    width: 100%;
+}
+
+.carousel-div{
+    text-align: center!important;
+    display: inline-block;
+}
+
+.carousel {
+    max-width: 600px;
+    width: 90vw;
+}
+
+#card-item{
+    min-height: 50vh; 
+}
+
+.carousel-inner{
+    min-height: 50vh;
+    max-width: 600px;
+    position: relative;
+    width: 90vw;
+}
+
+.carousel .item {
+    min-height: 50vh;
+    max-width: 600px;
+    width: 90vw;
   }
+
+.card-img {
+    opacity: .6;
+}
+  
+
+.space{
+    height: 10em;
+    position: relative;
+}
+
+.testimonials-container {
+    position: relative; 
+    padding-top: 1em;
+    background-color: rgb(228, 205, 199, .2);
+    z-index: -1;
+  }
+  
+  @media only screen and (max-width: 850px) {
+    .testimonials-bg {
+      display: none;
+    }
+  }
+
+.testimonials-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 0;
+    opacity: .15;
+    overflow: hidden
+  }
+  
+  .testimonials-video {
+    position:absolute;
+        width: 100%;
+    -o-object-fit: cover;
+    object-fit: cover
+  }
+
+.contact{
+    background-color: rgba(223,234,238,.7);
+    background-position: bottom;
+    position: relative;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.footer{
+    height: 20vh;
+    background-color: rgb(37, 37, 37);
+    background-position: bottom;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.footLinks{
+    display: inline;
+}
+
+.list {
+    padding: 0px 12px;
+}
+
+li > a > img {
+    height: 40px;
+    width: 40px;
+    padding: 3px;
+}
+
+.footText{
+ color: rgba(250, 235, 215, 0.5);
+ padding-bottom: 0px;
+}
+
+.closing{
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+
+
+
+
 
 .holder{
     height: 286px;
