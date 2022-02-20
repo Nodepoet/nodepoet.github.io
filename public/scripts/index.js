@@ -35,13 +35,13 @@ $('.navbar-nav>li>a').on('click', function(){
   $('.navbar-collapse').collapse('hide');
 });
 
-var header = $('.headShot');
-header.addClass('onLoad');
-
 $(window).scroll(function(){
   var wh = $(window).height()-1;
   if($(window).scrollTop() > $('.animated').offset().top-wh){
   	$('.animated').addClass('onScroll');
+  }
+  if($(window).scrollTop() > $('.headShot').offset().top-wh){
+  	$('.headShot').addClass('onScroll');
   }
 });
 
