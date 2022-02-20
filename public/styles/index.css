@@ -1,5 +1,11 @@
 body{
+    background-color: rgba(235, 232, 232, 0.377);
     -webkit-text-size-adjust: none;
+}
+
+.section {
+    margin-top: 5vh;
+    margin-bottom: 5vh;
 }
 
 body > .btn:hover {
@@ -88,8 +94,8 @@ margin-bottom: 5px;
 
 header{
    height: 40rem;
-    background-image: linear-gradient(rgba(255, 255, 255, .2), rgba(255, 255, 255, .2)),
-    url("https://res.cloudinary.com/dqqxdpug2/image/upload/v1644791927/default/header_lx5opb.jpg");
+    background-image: linear-gradient(rgba(255, 255, 255, .2), rgba(255, 255, 255, 0)),
+    url("https://res.cloudinary.com/dqqxdpug2/image/upload/v1645320908/default/head_vke0pg.png");
     background-size: 100% 100%;
     background-position: top;
     position: relative;
@@ -132,6 +138,7 @@ header{
     margin-top: 16px;
     font-size: 37px;
     display: inline-block;
+    overflow:hidden
 }
 
 .faceCol {
@@ -153,19 +160,39 @@ header{
     margin-bottom: 0px;
 }
 
+.cont{
+    overflow:hidden
+}
+
 .projects{
     background-color: transparent;
     height: auto;
     position: relative;
 }
 
-.card {
+.carousel-control-prev {
+    width: 8%;
+}
+
+.carousel-control-next {
+    width: 8%;
+}
+
+.carousel-contents {
+    padding: 2rem;
+}
+
+.card-mod {
     width: 100%;
     height: 100%;
     -webkit-perspective: 1000px;
     perspective: 1000px;
     border: none;
   }
+
+.project-card {
+    background-color: rgba(42, 103, 170, 1);;
+}
 
 .flipper {
     -webkit-transform-style: preserve-3d;
@@ -184,7 +211,7 @@ header{
   }
   
   .front {
-    background-color: rgba(223,234,238,.7);
+    color: white;
     border: 1px solid rgba(0,0,0,.125);
     border-radius: 0.25rem;
   }
@@ -196,7 +223,7 @@ header{
   .back {   
     -webkit-transform: rotateY(180deg);
     transform: rotateY(180deg);
-    background-color: rgba(223,234,238,.7);
+    background-color: rgba(42, 103, 170, .6);
     border: 1px solid rgba(0,0,0,.125);
     border-radius: 0.25rem;
   }
@@ -212,7 +239,7 @@ header{
 #cardImage{
     padding: 0px;
     background-image: linear-gradient(rgba(255, 255, 255, .2), rgba(255, 255, 255, .2)),
-    url("https://res.cloudinary.com/dqqxdpug2/image/upload/v1644726393/default/bg_xzhehh.jpg");
+    url("https://res.cloudinary.com/dqqxdpug2/image/upload/v1645321256/default/cardImage_zu058c.png");
     background-size: cover;
     display: flex;
     flex-direction: column;
@@ -222,8 +249,8 @@ header{
      height: auto;
      position: relative;
      width: 100%;
-     background-image: linear-gradient(rgba(255, 255, 255, .85), rgba(255, 255, 255, .5)),
-     url("https://res.cloudinary.com/dqqxdpug2/image/upload/v1644791927/default/header_lx5opb.jpg");
+     background-image: linear-gradient(rgba(255, 255, 255, .8), rgba(255, 255, 255, .2)),
+     url("https://res.cloudinary.com/dqqxdpug2/image/upload/v1645320908/default/head_vke0pg.png");
      background-size: 100% 100%;
      margin-top: 3px;
 }
@@ -331,7 +358,7 @@ header{
 }
 
 .contact{
-    background-color: rgba(223,234,238,.7);
+    background-color: rgba(223,234,238,.8);
     background-position: bottom;
     position: relative;
     height: auto;
@@ -387,3 +414,68 @@ li > a > img {
     height: 286px;
     width: 286px;
 }
+
+.headShot{
+    opacity: 0;
+
+}
+ .headShot.onLoad{
+    opacity: 1;
+    animation: backInUp; /* referring directly to the animation's @keyframe declaration */
+    animation-duration: 1s; /* don't forget to set a duration! */
+ }
+
+
+.animated{
+    opacity: 0;
+}
+ .animated.onScroll {
+    opacity: 1;
+    animation: zoomInDown; /* referring directly to the animation's @keyframe declaration */
+    animation-duration: 1.5s; /* don't forget to set a duration! */
+  }
+
+.scoop{
+    opacity: 0;
+}
+ .scoop.onScroll {
+    opacity: 1;
+    animation: fadeInTopLeft; /* referring directly to the animation's @keyframe declaration */
+    animation-duration: 1s; /* don't forget to set a duration! */
+ }
+
+.wellness{
+    opacity: 0;
+}
+ .wellness.onScroll {
+    opacity: 1;
+    animation: fadeInUpBig; /* referring directly to the animation's @keyframe declaration */
+    animation-duration: 1s; /* don't forget to set a duration! */
+ }
+
+.serving{
+    opacity: 0;
+}
+ .serving.onScroll {
+    opacity: 1;
+    animation: fadeInBottomRight; /* referring directly to the animation's @keyframe declaration */
+    animation-duration: 1s; /* don't forget to set a duration! */
+ }
+
+.brianna{
+    opacity: 0;
+}
+ .brianna.onScroll {
+    opacity: 1;
+    animation: lightSpeedInLeft; /* referring directly to the animation's @keyframe declaration */
+    animation-duration: .7s; /* don't forget to set a duration! */
+ }
+
+.mike{
+    opacity: 0;
+}
+ .mike.onScroll {
+    opacity: 1;
+    animation: lightSpeedInRight; /* referring directly to the animation's @keyframe declaration */
+    animation-duration: .7s; /* don't forget to set a duration! */
+ }
