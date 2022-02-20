@@ -125,10 +125,13 @@ header{
 }
 
 .head-text{
-    color: rgb(0, 62, 133);
-    text-shadow: 1px 1px 3px rgb(255, 255, 255);
+    color: white;
     font-weight: 500;
+    animation: backInUp; /* referring directly to the animation's @keyframe declaration */
+    animation-duration: 1s;
 }
+
+
 
 .contain{
     width: 100%;
@@ -154,25 +157,31 @@ header{
 }
 
 .lastName{
-    color: rgb(0, 62, 133);
-    text-shadow: 1px 1px 3px rgb(255, 255, 255);
-    font-size: 37px;
+    color: rgb(0, 0, 0);
+    font-weight: 700;
+    text-shadow: .5px .5px 1px rgb(255, 255, 255);
+    font-size: 40px;
     display: block;
-    margin-top: -4px;
+    margin-top: -7px;
 }
 
 .firstName{
-    text-shadow: 1px 1px 3px rgba(255, 255, 255, 1);
+    color: white;
+    text-shadow: 1px 1px 3px rgb(0, 0, 0);
     margin-bottom: 0px;
     margin-top: 16px;
     font-size: 37px;
+    font-weight: 500;
     display: inline-block;
     overflow:hidden
 }
 
 .faceCol {
     padding-left: 30px;
-    padding-top: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 10em;
     
 }
 
@@ -465,10 +474,10 @@ li > a > img {
     opacity: 0;
 
 }
- .headShot.onLoad{
+ .headShot.onScroll{
     opacity: 1;
     animation: backInUp; /* referring directly to the animation's @keyframe declaration */
-    animation-duration: 1s; /* don't forget to set a duration! */
+    animation-duration: 1.5s; /* don't forget to set a duration! */
  }
 
 
@@ -505,7 +514,7 @@ li > a > img {
  .serving.onScroll {
     opacity: 1;
     animation: slideInRight; /* referring directly to the animation's @keyframe declaration */
-    animation-duration: 1.5s; /* don't forget to set a duration! */
+    animation-duration: 1s; /* don't forget to set a duration! */
  }
 
 .brianna{
