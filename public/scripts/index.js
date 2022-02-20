@@ -39,14 +39,14 @@ var header = $('.headShot');
 header.addClass('onLoad');
 
 $(window).scroll(function(){
-  var wh = $(window).height()-100;
+  var wh = $(window).height()-1;
   if($(window).scrollTop() > $('.animated').offset().top-wh){
   	$('.animated').addClass('onScroll');
   }
 });
 
 $(window).scroll(function(){
-  var wh = $(window).height()-250;
+  var wh = $(window).height()-100;
   if($(window).scrollTop() > $('.scoop').offset().top-wh){
   	$('.scoop').addClass('onScroll');
   }
