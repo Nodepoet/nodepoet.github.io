@@ -66,6 +66,10 @@ body > .btn:hover {
     }
 }
 
+.btn-primary {
+    background-color: #aa5b2a;
+}
+
 .info{
     margin: 0px;
     margin-left: 3px;
