@@ -37,11 +37,18 @@ $('.navbar-nav>li>a').on('click', function(){
 
 $(window).scroll(function(){
   var wh = $(window).height()-1;
-  if($(window).scrollTop() > $('.animated').offset().top-wh){
-  	$('.animated').addClass('onScroll');
-  }
   if($(window).scrollTop() > $('.headShot').offset().top-wh){
   	$('.headShot').addClass('onScroll');
+  }
+  if($(window).scrollTop() > $('.about-content').offset().top-wh){
+  	$('.about-content').addClass('onScroll');
+  }
+});
+
+$(window).scroll(function(){
+  var wh = $(window).height()-50; 
+  if($(window).scrollTop() > $('.animated').offset().top-wh){
+  	$('.animated').addClass('onScroll');
   }
 });
 
