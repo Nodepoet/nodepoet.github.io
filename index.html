@@ -8,6 +8,9 @@
   <title>Vincent McIntosh</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Kanit:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"
     integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="./public/styles/index.css">
@@ -18,26 +21,27 @@
   <nav class="navbar fixed-top navbar-light" id="nav" aria-label="navbar">
     <div class="container-fluid">
       <a class="navbar-brand" href="#"></a>
-      <button class="navbar-toggler" id="toggle" type="button" data-bs-toggle="collapse" data-bs-target="#navBar"
+      <button class="navbar-toggler collapsed" id="toggle" type="button" data-bs-toggle="collapse" data-bs-target="#navBar"
         aria-controls="navBar" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
+        <span class="close hvr-grow-shadow py-1">✖</span>
+        <span class="navbar-toggler-icon hvr-grow-shadow"></span>
       </button>
       <div class="collapse navbar-collapse" id="navBar">
         <ul class="navbar-nav text-center">
           <li class="nav-item">
-            <a class="nav-link active" id="link" aria-current="page" href="#about">About Me</a>
+            <a class="nav-link active hvr-skew" id="link" aria-current="page" href="#about">About Me</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link active" id="link" aria-current="page" href="#services">Services</a>
+            <a class="nav-link active hvr-skew" id="link" aria-current="page" href="#services">Services</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link active" id="link" aria-current="page" href="#projects">Projects</a>
+            <a class="nav-link active hvr-skew" id="link" aria-current="page" href="#projects">Projects</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link active" id="link" aria-current="page" href="#testimonials">Testimonials</a>
+            <a class="nav-link active hvr-skew" id="link" aria-current="page" href="#testimonials">Testimonials</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link active" id="link" aria-current="page" href="#contact">Contact</a>
+            <a class="nav-link active hvr-skew" id="link" aria-current="page" href="#contact">Contact</a>
           </li>
         </ul>
       </div>
@@ -59,22 +63,22 @@
         <h4 class="text-center head-text">Full-Stack Developer looking for cash</h4>
       </div>
       <div class="mt-3 text-center">
-        <a class="btn btn-light" href="#about" role="button">Learn More!</a>
+        <a class="btn hvr-ripple-out btn-light" href="#about" role="button">Learn More!</a>
         </div>
     </div>
   </header>
 
   <section id="about" class="section">
-    <h1 id="test" class="text-center mt-5 mb-3">About Me</h1>
+    <h1 id="test" class="text-center mt-5 mb-3"><i class="topic hvr-grow-shadow"><span class="text-gradient">About Me</span></i></h1>
     <div class="row mt-5 g-0 cont">
-    <div class="col text-center headShot">
-      <img class="face " src="./public/styles/face.PNG" alt="">
+    <div class="col-12 col-md-6 text-center headShot">
+      <img class="face hvr-float-shadow" src="./public/styles/face.PNG" alt="">
       <div>
-      <a href="https://www.youtube.com/watch?v=LLRmBWP2ob4"  role="button" class="btn btn-info btn-lg mb-5 mt-5 headShot">Full Resume</a>
+      <a href="https://www.youtube.com/watch?v=LLRmBWP2ob4" id="full"  role="button" class="btn hvr-sweep-to-right btn-info btn-lg mb-5 mt-5 headShot">Full Resume</a>
       </div>
       </div>
-      <div class="col about-content">
-        <div class="about-div ">
+      <div class="col-12 col-md-6 about-content">
+        <div class="about-div hvr-skew">
       <p id="next" class="about">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Atque laudantium esse nostrum
         similique nisi eveniet non, totam distinctio quia debitis repudiandae assumenda, commodi minus fuga delectus sed
         accusamus voluptate? Dolorum.
@@ -82,7 +86,7 @@
         tempore labore veritatis excepturi alias necessitatibus, odio suscipit rerum maxime eligendi soluta architecto
         laborum non voluptas. Aliquid!</p>
         </div>
-        <div class="about-div">
+        <div class="about-div hvr-skew">
           <p id="next" class="about">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Atque laudantium esse nostrum
             similique nisi eveniet non, totam distinctio quia debitis repudiandae assumenda, commodi minus fuga delectus sed
             accusamus voluptate? Dolorum.
@@ -90,7 +94,7 @@
             tempore labore veritatis excepturi alias necessitatibus, odio suscipit rerum maxime eligendi soluta architecto
             laborum non voluptas. Aliquid!</p>
             </div>
-            <div class="about-div">
+            <div class="about-div hvr-skew">
               <p id="next" class="about">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Atque laudantium esse nostrum
                 similique nisi eveniet non, totam distinctio quia debitis repudiandae assumenda, commodi minus fuga delectus sed
                 accusamus voluptate? Dolorum.
@@ -98,7 +102,11 @@
                 tempore labore veritatis excepturi alias necessitatibus, odio suscipit rerum maxime eligendi soluta architecto
                 laborum non voluptas. Aliquid!</p>
                 </div>
-
+    </div>
+  </div>
+  <div class="row g-0 mobile text-center">
+    <div>
+    <a href="https://www.youtube.com/watch?v=LLRmBWP2ob4"  role="button" class="btn hvr-sweep-to-right btn-info btn-lg mb-5 mt-5 headShot">Full Resume</a>
     </div>
   </div>
   </div>
@@ -106,9 +114,9 @@
 
   <section class="services justify-content-center text-center section animated cont" id="services">
     </div>
-    <h1 class="text-center mb-5 service-title">Services</h1>
+    <h1 class="text-center mb-5 service-title"><i class="topic hvr-grow-shadow"><span class="text-gradient">Services</span></i></h1>
     </div>
-    <div class="carousel-div ">
+    <div class="carousel-div hvr-bubble-right">
       <div id="carouselExampleIndicators" class="carousel slide carousel-fade " data-interval="false">
         <div class="carousel-indicators">
           <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
@@ -175,7 +183,7 @@
   </section>
 
   <section id="projects" class="projects mb-3 pb-3 pt-5 section">
-    <h1 class="text-center">Projects</h1>
+    <h1 class="text-center"><i class="topic hvr-grow-shadow"><span class="text-gradient">Projects</span></i></h1>
     <div class="container mt-5 ">
       <div class="row justify-content-center cont pt-5">
         <div id="card" class="col-xs-12 col-lg-4 mb-3 d-flex text-center justify-content-center scoop">
@@ -186,7 +194,7 @@
                 <div class="card-body project-card">
                   <h4 class="card-title">The Scoop</h4>
                   <p class="card-text">Full Stack CRUD Application</p>
-                  <a href="https://the-scoop-review.herokuapp.com" class="btn btn-primary">Check it
+                  <a href="https://the-scoop-review.herokuapp.com" class="btn hvr-grow-shadow btn-primary">Check it
                     out!</a>
                   <div class="row info">
                     <div class="col info">
@@ -218,7 +226,7 @@
                 <div class="card-body project-card">
                   <h4 class="card-title">Mood Boost</h4>
                   <p class="card-text">Full Stack CRUD Application</p>
-                  <a href="https://the-scoop-review.herokuapp.com" class="btn btn-primary">Check it
+                  <a href="https://the-scoop-review.herokuapp.com" class="btn hvr-grow-shadow btn-primary">Check it
                     out!</a>
                   <div class="row info">
                     <div class="col info">
@@ -250,7 +258,7 @@
                 <div class="card-body project-card">
                   <h4 class="card-title">Serving U</h4>
                   <p class="card-text">Full Stack CRUD Application</p>
-                  <a href="https://the-scoop-review.herokuapp.com" class="btn btn-primary">Check it
+                  <a href="https://the-scoop-review.herokuapp.com" class="btn hvr-grow-shadow btn-primary">Check it
                     out!</a>
                   <div class="row info">
                     <div class="col info">
@@ -285,10 +293,10 @@
         "Your browser does not support the video"
       </video>
     </div>
-    <h1 class="text-center mt-3 mb-5">Testimonials</h1>
+    <h1 class="text-center mt-3 mb-5"><i class="topic hvr-grow-shadow"><span class="text-gradient">Testimonials</span></i></h1>
     <div class="pb-3">
       <div class="card card-mod mb-5 testimonial-div">
-        <div class="row g-0 testimonial-card brianna">
+        <div class="row g-0 testimonial-card brianna hvr-float-shadow">
           <div class="col img-flex">
             <div class="card-body testimonial-body">
             <img src="./public/styles/Bri.png" class="img-fluid rounded-start testimonial-img" alt="">
@@ -301,7 +309,7 @@
         </div>
       </div>
       <div class="card card-mod mb-4 testimonial-div">
-        <div class="row g-0 testimonial-card mike">
+        <div class="row g-0 testimonial-card mike hvr-float-shadow">
           <div class="col img-flex">
             <div class="card-body testimonial-body">
             <img src="./public/styles/Mike.png" class="img-fluid rounded-start testimonial-img" alt="">
@@ -338,7 +346,7 @@
                     <textarea placeholder="Speak your truth!" class="form-control" type="text" name="comments"
                       id="comments" required></textarea>
                   </div>
-                  <button class="btn btn-primary btn-block">Submit</button>
+                  <button class="btn btn-primary hvr-grow-shadow  btn-block">Submit</button>
                 </form>
               </div>
             </div>
@@ -361,12 +369,12 @@
       <div class="row">
         <div class="col-xs-12 col-sm-6 text-center">
           <ul class="list">
-            <li class="footLinks"><a href="https://www.linkedin.com/in/vincent-mcintosh-969603192/"><img
+            <li class="footLinks"><a href="https://www.linkedin.com/in/vincent-mcintosh-969603192/"><img class="hvr-grow-shadow"
                   src="./public/styles/linkedin.png" alt="linkedin"></a></li>
-            <li class="footLinks"><a href="https://github.com/Nodepoet"><img src="./public/styles/github.png"
+            <li class="footLinks"><a href="https://github.com/Nodepoet"><img class="hvr-grow-shadow" src="./public/styles/github.png"
                   alt="github"></a></li>
-            <li class="footLinks"><a href="tel:484-868-8864"><img src="./public/styles/phone.png" alt="phone"></a></li>
-            <li class="footLinks"><a href="mailto:vincemcintosh7@gmail.com"><img src="./public/styles/email.png"
+            <li class="footLinks"><a href="tel:484-868-8864"><img class="hvr-grow-shadow" src="./public/styles/phone.png" alt="phone"></a></li>
+            <li class="footLinks"><a href="mailto:vincemcintosh7@gmail.com"><img class="hvr-grow-shadow" src="./public/styles/email.png"
                   alt="email"></a></li>
           </ul>
         </div>
