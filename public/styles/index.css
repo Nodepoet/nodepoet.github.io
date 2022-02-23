@@ -198,6 +198,17 @@ header{
     margin-bottom: 0px;
 }
 
+
+.about-div{
+     position: relative;
+     background-color: rgba(0, 0, 255, 0.11);
+     margin: 1em;
+     margin-bottom: 1.5em;
+     
+}
+
+
+
 .cont{
     overflow:hidden
 }
@@ -476,18 +487,26 @@ li > a > img {
 }
  .headShot.onScroll{
     opacity: 1;
-    animation: backInUp; /* referring directly to the animation's @keyframe declaration */
-    animation-duration: 1.5s; /* don't forget to set a duration! */
- }
+    animation: slideInLeft; /* referring directly to the animation's @keyframe declaration */
+    animation-duration: 1.2s; /* don't forget to set a duration! */                                                       
+}
 
+.about-content{
+    opacity: 0;
+}
+.about-content.onScroll{
+    opacity: 1;
+    animation: slideInRight; /* referring directly to the animation's @keyframe declaration */
+    animation-duration: 1s;
+}
 
 .animated{
     opacity: 0;
 }
  .animated.onScroll {
     opacity: 1;
-    animation: zoomInDown; /* referring directly to the animation's @keyframe declaration */
-    animation-duration: 1.3s; /* don't forget to set a duration! */
+    animation: fadeIn; /* referring directly to the animation's @keyframe declaration */
+    animation-duration: 2s; /* don't forget to set a duration! */
   }
 
 .scoop{
