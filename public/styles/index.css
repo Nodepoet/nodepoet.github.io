@@ -9,6 +9,7 @@ body{
     margin-bottom: 5vh;
 }
 
+
 .hvr-sweep-to-right {
     display: inline-block;
     vertical-align: middle;
@@ -61,8 +62,8 @@ body{
     transition-property: transform;
   }
   .hvr-skew:hover, .hvr-skew:focus, .hvr-skew:active {
-    -webkit-transform: skew(-15deg);
-    transform: skew(-15deg);
+    -webkit-transform: skew(-10deg);
+    transform: skew(-10deg);
   }
 
   .hvr-bubble-right {
@@ -347,8 +348,7 @@ margin-bottom: 5px;
 header{
     border-top: 0;
     height: 40rem;
-    background-image: linear-gradient(0.75turn, rgba(0, 63, 134, .5), rgba(170, 91, 42, .5)),
-    url("city.jpg");
+    background-image: linear-gradient(315deg, rgba(0,0,74,.2) 50%, rgba(81,99,238,.7) 100%), url("BgBlue.jpeg");
     background-size: 100% 100%;
     background-position: top;
     position: relative;
@@ -361,8 +361,7 @@ header{
 header{ 
     border-top: 0;
     height: 37rem;
-    background-image: linear-gradient(0.75turn, rgba(0, 63, 134, .5), rgba(170, 91, 42, .5)),
-    url("city.jpg");
+    background-image: url("BgBlue.jpeg");
     background-size: 100% 100%;
     background-position: top;
     position: relative;
@@ -425,7 +424,7 @@ header{
 .lastName{
     color: rgb(0, 0, 0);
     font-weight: 700;
-    text-shadow: .5px .5px 1px rgb(255, 255, 255);
+    text-shadow: .5px .5px 1.5px rgb(255, 255, 255);
     font-size: 40px;
     display: block;
     margin-top: -7px;
@@ -461,18 +460,19 @@ header{
 }
 
 .about{
-    padding: 1rem;
+    padding: 2rem;
     margin-bottom: 0px;
-    text-shadow: 0px 0px 3px rgb(255, 255, 255);
+    text-shadow: 0px 0px 3px rgb(0, 0, 0);
+    color: white;
 }
 
 
 .about-div{
      position: relative;
-     background-image: linear-gradient(to right, rgba(42, 103, 170, .2), rgba(170, 91, 42, .3));
-     margin: 1em;
+     background-color: #264a73;
+     margin: 2em;
      margin-bottom: 1.5em;
-     
+     border-radius: 40px 0px 40px 0px;
 }
 
 .mobile{
@@ -524,7 +524,9 @@ header{
   }
 
 .project-card {
-    background-color: rgba(42, 103, 170, 1);;
+    background-color: rgba(42, 103, 170, 1);
+    border-bottom-left-radius: 1.5em;
+    border-bottom-right-radius: 1.5em;
 }
 
 .flipper {
@@ -545,8 +547,9 @@ header{
   
   .front {
     color: white;
-    border: 1px solid rgba(0,0,0,.125);
-    border-radius: 0.25rem;
+    border-radius: 1.5em;
+   
+ 
   }
   
   .front:hover {
@@ -557,8 +560,9 @@ header{
     -webkit-transform: rotateY(180deg);
     transform: rotateY(180deg);
     background-color: rgba(42, 103, 170, .6);
-    border: 1px solid rgba(0,0,0,.125);
-    border-radius: 0.25rem;
+    border-radius: 1.5em;
+
+
   }
   
   .back:hover {
@@ -571,27 +575,25 @@ header{
 
 #cardImage{
     padding: 0px;
-    background-image: linear-gradient(rgba(255, 255, 255, .2), rgba(255, 255, 255, .2)),
-    url("https://res.cloudinary.com/dqqxdpug2/image/upload/v1645321256/default/cardImage_zu058c.png");
+    background-color: #00004a;
     background-size: cover;
     display: flex;
     flex-direction: column;
+    justify-content: center;
 }
 
 .services {
      height: auto;
      position: relative;
      width: 100%;
-     background-image: linear-gradient(rgba(170, 91, 42, .3), rgba(170, 91, 42, .3)),
-     url("drive.gif");
+     background-image: url("BgBlue.jpeg");
      background-size: 100% 100%;
      margin-top: 3px;
-     -webkit-clip-path: polygon(0 0,100% 0,100% 80%,0 100%);
-     clip-path: polygon(0 20%,100% 0,100% 80%,0 100%);
+    
 }
 .service-title {
     width: 100%;
-    padding-top: 4em;
+    padding-top: 2em;
 }
 
 @media (max-width: 800px){
@@ -599,12 +601,10 @@ header{
      height: auto;
      position: relative;
      width: 100%;
-     background-image: linear-gradient(rgba(170, 91, 42, .3), rgba(170, 91, 42, .3)),
-     url("drive.gif");
+     background-image: url("BgBlue.jpeg");
      background-size: 100% 100%;
      margin-top: 3px;
-     -webkit-clip-path: polygon(0 0,100% 0,100% 80%,0 100%);
-     clip-path: polygon(0 15%,100% 0,100% 85%,0 100%);
+
     }
 }
 
@@ -640,10 +640,15 @@ header{
 .card-img {
     opacity: .6;
 }
+
+.card-img-top {
+    border-top-left-radius: 1.5em;
+    border-top-right-radius: 1.5em;
+}
   
 
 .space{
-    height: 10em;
+    height: 5em;
     position: relative;
 }
 
