@@ -782,6 +782,7 @@ li > a > img {
 
 .about-content{
     opacity: 0;
+    align-self: center;
 }
 .about-content.onScroll{
     opacity: 1;
