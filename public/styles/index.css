@@ -402,6 +402,7 @@ header{
     width: 100%;
     height: auto;
     display: flex;
+    margin-left: 1px;
 }
 
 .home{
@@ -442,7 +443,6 @@ header{
 }
 
 .faceCol {
-    padding-left: 30px;
     display: flex;
     justify-content: center;
     align-items: center;
