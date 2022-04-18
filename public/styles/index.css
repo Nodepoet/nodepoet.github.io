@@ -31,6 +31,7 @@ body{
     right: 0;
     bottom: 0;
     background: #39aa2a;
+    border-color: #369d28;
     -webkit-transform: scaleX(0);
     transform: scaleX(0);
     -webkit-transform-origin: 0 50%;
@@ -297,10 +298,23 @@ body{
 }
 
 .btn-primary {
-    background-color: rgb(170, 91, 42);
+    background-color: #128502;
+    border-color: #128502;
 }
  .btn-primary:hover {
-    background-color: #39aa2a;
+    background-color: #2a9e1b;
+    border-color: #128502;
+    
+ }
+
+ .btn-secondary {
+    background-color: #54586d;
+    border-color: #54586d;
+}
+ .btn-secondary:hover {
+    background-color: #646983;
+    border-color: #54586d;
+    
  }
 
 .btn-light{
@@ -309,19 +323,19 @@ body{
  
 
 .btn-info{
-    background-color: rgb(42, 103, 170);
-    border: rgb(42, 103, 170) solid;
+    background-color: rgba(9, 45, 111, 1);
+    border: rgba(9, 45, 111, 1) solid;
     color: white;
 }
  .btn-info:hover {
-    background-color: rgb(42, 103, 170);
-    border: rgb(42, 103, 170) solid;
+    background-color: rgba(9, 45, 111, 1);
+    border: rgba(9, 45, 111, 1) solid;
     color: white;
 } 
 
 .info{
     margin: 0px;
-    margin-left: 3px;
+    margin-left: 10px;
     padding: 0px;
     display: inline;
     align-items: center;
@@ -374,10 +388,21 @@ header{
 .head-text{
     color: white;
     font-weight: 500;
-    font-size: calc(1.5em + .5vw);
+    font-size: calc(2em + .5vw);
     animation: backInUp; /* referring directly to the animation's @keyframe declaration */
     animation-duration: 1s;
     text-shadow: .5px .5px 1px rgba(0, 0, 0, 0.8);
+}
+
+@media (max-width: 560px){
+    .head-text{
+        color: white;
+        font-weight: 500;
+        font-size: calc(1.25em + .5vw);
+        animation: backInUp; /* referring directly to the animation's @keyframe declaration */
+        animation-duration: 1s;
+        text-shadow: .5px .5px 1px rgba(0, 0, 0, 0.8);
+    }
 }
 
 .topic{
@@ -390,11 +415,7 @@ header{
 }
 
 .text-gradient{
-   background: -webkit-linear-gradient(0turn, #2a67aa, #aa5b2a);
-  -webkit-background-clip: text;
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
-  color: transparent;
+  color: #2a67aa;
   padding: 4px;
 }
 
@@ -446,7 +467,8 @@ header{
     display: flex;
     justify-content: center;
     align-items: center;
-    padding-top: 10em;
+    padding-top: 9.5em;
+    padding-bottom: 1.5em;
     
 }
 
@@ -466,32 +488,33 @@ header{
     color: white;
 }
 
-
-.about-div{
-     position: relative;
-     background-color: #264a73;
-     margin: 2em;
-     margin-bottom: 1.5em;
-     border-radius: 40px 0px 40px 0px;
-}
-
 .mobile{
-    display: none;
+    display: flex;
 }
 
-@media (max-width: 767.98px){
-    #full {
-        display: none;
-    }
-    .mobile{
-        display: flex;
-    }
-    .face{
-        margin-bottom: 2em;
-        margin-top: 0em;
-    }
+.accordion {
+  margin-left: 1em;
+  margin-right: 1em;
 }
 
+.accordion-item{
+    margin-bottom: 1.5em;
+    background: #54586d;
+    color: white;
+}
+
+.accordion-button{
+    background-color: rgb(2, 48, 133, .5);
+    color: white;
+}
+.accordion-button.collapsed::after {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23fff'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
+  }
+
+.accordion-button:not(.collapsed) {
+    color: #ffffff;
+    background-color: rgb(2, 48, 133, .5);
+}
 
 .cont{
     overflow:hidden
@@ -524,7 +547,7 @@ header{
   }
 
 .project-card {
-    background-color: rgba(42, 103, 170, 1);
+    background-color: #092d6f;
     border-bottom-left-radius: 1.5em;
     border-bottom-right-radius: 1.5em;
 }
@@ -559,7 +582,8 @@ header{
   .back {   
     -webkit-transform: rotateY(180deg);
     transform: rotateY(180deg);
-    background-color: rgba(42, 103, 170, .6);
+    background-color: #54586d;
+    color: white;
     border-radius: 1.5em;
 
 
@@ -621,7 +645,7 @@ header{
 
 #card-item{
     min-height: 50vh; 
-    border-radius: 70px 0px 70px 0px;
+    border-radius: 40px 40px 40px 40px;
 }
 
 .carousel-inner{
@@ -641,6 +665,11 @@ header{
     opacity: .6;
 }
 
+.card-img-overlay{
+    background-color: #54586d;
+    border-radius: 40px 40px 40px 40px;
+}
+
 .card-img-top {
     border-top-left-radius: 1.5em;
     border-top-right-radius: 1.5em;
@@ -655,7 +684,7 @@ header{
 .testimonials-container {
     position: relative; 
     padding-top: 1em;
-    background-color: rgb(228, 205, 199, .2);
+    background-color: rgb(2, 48, 133);
 
   }
 
@@ -708,12 +737,12 @@ header{
     color: white;
     margin-left: 1em;
     margin-right: 1em;
-    border-radius: 70px 0px 70px 0px;
-    background: rgb(42, 103, 170, .8);
+    border-radius: 50px 50px 50px 50px;
+    background: rgb(84, 88, 109, .9);
 }
 
 .contact{
-    background-color: rgba(223,234,238,.8);
+    background-color: rgba(223,234,238,.95);
     background-position: bottom;
     position: relative;
     height: auto;
